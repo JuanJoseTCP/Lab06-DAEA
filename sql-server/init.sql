@@ -1,12 +1,9 @@
--- Crear la base de datos
 CREATE DATABASE MovieLens;
 GO
 
--- Usar la base de datos
 USE MovieLens;
 GO
 
--- Crear tablas según los archivos del dataset
 CREATE TABLE Movies (
     MovieID INT PRIMARY KEY,
     Title NVARCHAR(255),
@@ -33,7 +30,6 @@ CREATE TABLE Links (
     TMDbID INT
 );
 
--- Cargar datos usando BULK INSERT
 BULK INSERT Movies
 FROM '/var/opt/mssql/app/data/movies.csv'
 WITH (

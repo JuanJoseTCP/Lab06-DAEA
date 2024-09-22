@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/mssql/server:2019-latest
 
 ENV ACCEPT_EULA=Y
-ENV SA_PASSWORD=12345678
+ENV SA_PASSWORD=StrongPass123!
 ENV MSSQL_PID=Express
 
 USER root
